@@ -1,0 +1,179 @@
+
+
+h1{
+  font-family: lust, serif;
+  font-style: normal;
+  font-size: 50pt;
+}
+h2{
+  font-family: lust, serif;
+  font-style: normal;
+  font-size: 34pt;
+}
+p{
+  font-family: lust-sans, sans-serif;
+  font-style: medium;
+  font-size: 20pt;  
+}
+body{
+  background-color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+text-decoration: none;
+ }
+}
+nav {
+    color: white; 
+    list-style-type: none;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: #eebb99;
+  }
+  
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #eebb99;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+
+.title{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: #eebb99;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.jumbotron{
+  margin-bottom: 0;
+}
+.lead{
+color: #ffffff;
+font-family: lust-sans, sans-serif;
+font-style: medium;
+font-size: 15pt;  
+}
+.names{
+  color: #ffffff;
+  font-size: 15pt;
+}
+.btn{
+  color: white;
+  font-family: lust-sans, sans-serif;
+  font-style: medium;
+  font-size: 15pt;
+}
+.btn-link {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: #eebb99;
+}
+.card-header{
+  background-color: black;
+}
+ footer {
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #496a81;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+ }
+.copyRight{ 
+  bottom: 0;
+  font-size: 10pt;
+  margin: 0;
+}
+@media(max-width: 600px){
+    .title{
+        font-size: 25pt;
+        color: #eebb99;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section{
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+        padding: 20px;
+    }
+    article{
+        width: 100%;
+        color: black;  
+    }
+    .skills{
+        padding-left: 20px;
+    }
+}
