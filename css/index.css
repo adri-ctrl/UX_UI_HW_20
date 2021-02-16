@@ -1,19 +1,19 @@
 
 
 h1{
-  font-family: lust, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-size: 50pt;
 }
 h2{
-  font-family: lust, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
-  font-size: 34pt;
+  font-size: 20pt;
 }
 p{
-  font-family: lust-sans, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: medium;
-  font-size: 20pt;  
+  font-size: 14pt;  
 }
 body{
   background-color: black;
@@ -29,7 +29,7 @@ nav {
     color: white; 
     list-style-type: none;
     text-align: center;
-    font-family: Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
